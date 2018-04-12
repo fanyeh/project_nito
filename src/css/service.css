@@ -1,0 +1,51 @@
+.serviceItemTransition {
+  transition: height 300ms ease-out;
+}
+
+.serviceItemHeader:hover {
+  color: gray;
+}
+
+.serviceItemHeaderTransition {
+  transform: translateX(64px);
+}
+
+.serviceItemHeaderTransition:before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  left: -64px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .serviceItemHeaderTransition {
+    transform: translateX(16px);
+  }
+
+  .serviceItemHeaderTransition:before {
+    content: '';
+    width: 10px;
+    height: 1px;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  div.serviceContainer {
+    width: 42%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  div.serviceContainer {
+    width: 30%;
+  }
+}

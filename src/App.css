@@ -1,0 +1,54 @@
+@import './css/header.css';
+@import './css/main.css';
+@import './css/intro.css';
+@import './css/service.css';
+@import './css/blog.css';
+
+.cp {
+  cursor: pointer;
+}
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.z-neg-1 {
+  z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .v-center-l {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.productInfo > h1:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 60px;
+  height: 1px;
+  background-color: black;
+}
+
+.productInfo {
+  transform: translateX(100%);
+  transition: all 200ms 250ms linear;
+  opacity: 0;
+}
+
+.productInfo.hover {
+  opacity: 1;
+  transform: translateX(0);
+}

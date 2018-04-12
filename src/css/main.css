@@ -1,0 +1,25 @@
+.sliderButton {
+  transition: opacity 300ms;
+}
+
+.sliderButton:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .slideImage {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .slideImage {
+    width: 100%;
+    height: auto;
+  }
+}

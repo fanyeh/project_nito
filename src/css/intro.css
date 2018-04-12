@@ -1,0 +1,26 @@
+.sectionHeader:before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  border-bottom: 1px solid black;
+}
+
+.sectionCaption {
+  word-spacing: 0.1em;
+}
+
+.progressBar {
+  width: var(--barWidth);
+  height: 7px;
+}
+
+.progressBar:after {
+  position: absolute;
+  content: '';
+  background-color: black;
+  width: calc(var(--barWidth) * var(--percentage));
+  height: 7px;
+  left: 0;
+  top: 0;
+}

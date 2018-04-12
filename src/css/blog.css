@@ -1,0 +1,23 @@
+.blogImageWrapper {
+  height: 180px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .blogImageWrapper {
+    height: 200px;
+  }
+
+  div.blogContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blogImageWrapper {
+    height: 240px;
+  }
+
+  div.w-custom {
+    width: 63.5%;
+  }
+}

@@ -1,0 +1,18 @@
+.navItem:hover .menuTitle {
+  color: white;
+  background-color: black;
+}
+
+.menuTitle {
+  transition: color 500ms, background-color 500ms;
+  line-height: 64px;
+}
+
+.menuItem {
+  transition: transform 300ms, color 200ms;
+}
+
+.menuItem:hover {
+  transform: translateX(10px);
+  color: grey;
+}
